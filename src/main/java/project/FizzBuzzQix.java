@@ -14,6 +14,9 @@ public class FizzBuzzQix {
                 thingToSay = "Buzz";
             }
         }
+        if (numberToInterpret%7==0) {
+            thingToSay = "Qix";
+        }
         return thingToSay;
 
     }

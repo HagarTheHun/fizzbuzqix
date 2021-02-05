@@ -27,8 +27,14 @@ public class FizzBuzzQixTest {
         assertThat(spokenWord).isEqualTo("Buzz");
         assertThat(otherSpokenWord).isEqualTo("Buzz");
     }
-//    @Test
-//    public void sevenAnd
+    @Test
+    public void sevenAndFourteenReturnQix() {
+        FizzBuzzQix underTest = new FizzBuzzQix();
+        String spokenWord = underTest.interpret(7);
+        String otherSpokenWord = underTest.interpret(14);
+        assertThat(spokenWord).isEqualTo("Qix");
+        assertThat(otherSpokenWord).isEqualTo("Qix");
+    }
     @Test
     public void fifteenAndThirtyReturnFizzBuzz() {
         FizzBuzzQix underTest = new FizzBuzzQix();
