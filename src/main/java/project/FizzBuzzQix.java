@@ -7,6 +7,13 @@ public class FizzBuzzQix {
         if (numberToInterpret%3==0) {
             thingToSay = "Fizz";
         }
+        if (numberToInterpret%5==0) {
+            if (thingToSay.equals("Fizz")) {
+                thingToSay = thingToSay + "Buzz";
+            } else {
+                thingToSay = "Buzz";
+            }
+        }
         return thingToSay;
 
     }
