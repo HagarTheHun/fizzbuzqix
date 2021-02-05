@@ -15,7 +15,7 @@ public class FizzBuzzQix {
             }
         }
         if (numberToInterpret%7==0) {
-            if (thingToSay.equals("Buzz")) {
+            if (thingToSay.equals("Buzz") || thingToSay.equals("Fizz") || thingToSay.equals("FizzBuzz")) {
                 thingToSay = thingToSay + "Qix";
             } else {
                 thingToSay = "Qix";

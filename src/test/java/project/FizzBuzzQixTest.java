@@ -12,6 +12,16 @@ public class FizzBuzzQixTest {
         assertThat(spokenWord).isEqualTo("1");
     }
     @Test
+    public void twoFourAndOneHundredThirtyFourReturnThemselves() {
+        FizzBuzzQix underTest = new FizzBuzzQix();
+        String spokenWord = underTest.interpret(2);
+        String otherSpokenWord = underTest.interpret(4);
+        String otherOtherSpokenWord = underTest.interpret(134);
+        assertThat(spokenWord).isEqualTo("2");
+        assertThat(otherSpokenWord).isEqualTo("4");
+        assertThat(otherOtherSpokenWord).isEqualTo("134");
+    }
+    @Test
     public void threeAndSixReturnFizz() {
         FizzBuzzQix underTest = new FizzBuzzQix();
         String spokenWord = underTest.interpret(3);
@@ -50,5 +60,22 @@ public class FizzBuzzQixTest {
         String otherSpokenWord = underTest.interpret(70);
         assertThat(spokenWord).isEqualTo("BuzzQix");
         assertThat(otherSpokenWord).isEqualTo("BuzzQix");
+    }
+    @Test
+    public void twentyOneAndFourtyTwoReturnFizzQix() {
+        FizzBuzzQix underTest = new FizzBuzzQix();
+        String spokenWord = underTest.interpret(21);
+        String otherSpokenWord = underTest.interpret(42);
+        assertThat(spokenWord).isEqualTo("FizzQix");
+        assertThat(otherSpokenWord).isEqualTo("FizzQix");
+    }
+    @Test
+    public void oneHundredFiveAndTwoHundredTenReturnFizzBuzzQix() {
+        FizzBuzzQix underTest = new FizzBuzzQix();
+        String spokenWord = underTest.interpret(105);
+        String otherSpokenWord = underTest.interpret(210);
+        assertThat(spokenWord).isEqualTo("FizzBuzzQix");
+        assertThat(otherSpokenWord).isEqualTo("FizzBuzzQix");
+
     }
 }
